@@ -90,7 +90,7 @@ const ScatterPlot = (props) => {
         scatterGL.resize();
       });
 
-      // Vectorize with UMAP and visualize
+      // Reduce vector dimentions with UMAP and visualize
       const umap_options = {
         nComponents: 3, 
         nNeighbors: 5, 
