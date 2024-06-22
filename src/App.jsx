@@ -91,14 +91,18 @@ const App = () => {
     getBarData();
     getScatterData();
 
+    // To enable dynamic/live update of data and visualizations, uncomment the following block and 
+    // the 'clearInterval(...)' line in the return statement below.
+    /*
     const intervalId = setInterval(() => {
       getBarData();
       getScatterData();
     }, 60000 * 2) // 60000 milliseconds = 1 minute
+    */
 
     // Clean up
     return () => {
-      clearInterval(intervalId);
+      //clearInterval(intervalId);
       setBarData({});
       setScatterData({});
     }
